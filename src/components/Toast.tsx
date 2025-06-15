@@ -20,8 +20,10 @@ export function Toast({ message, isVisible, onClose }: ToastProps) {
   if (!isVisible) return null;
 
   return (
-    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2 animate-fade-in max-w-[calc(100%-2rem)] z-50">
-      <Check className="w-4 h-4 flex-shrink-0 text-green-400" />
+    <div className="fixed bottom-4 left-1/2 -translate-x-1/2 bg-primary-color text-white px-4 py-2.5 rounded-lg shadow-lg flex items-center gap-2 z-50 toast-animation">
+      <div className="bg-white bg-opacity-20 p-1 rounded-full">
+        <Check className="w-3 h-3 flex-shrink-0 text-white" />
+      </div>
       <span className="text-sm whitespace-nowrap">{message}</span>
     </div>
   );
