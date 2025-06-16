@@ -45,6 +45,8 @@ const translations: Record<Language, Record<string, string | React.ReactNode>> =
     'about.title': 'About V2Ray Guide',
     'about.description': 'This app provides guides and resources for setting up and using V2Ray.',
     'about.telegram': 'Join our Telegram channel',
+    'about.configs_repo': 'V2Ray Configs Repository',
+    'about.app_repo': 'View project on GitHub',
     
     // Language
     'language.switch': 'فارسی',
@@ -85,6 +87,8 @@ const translations: Record<Language, Record<string, string | React.ReactNode>> =
     'about.title': <>درباره راهنمای <span className="preserve-ltr">V2Ray</span></>,
     'about.description': <>این برنامه راهنماها و منابعی برای نصب و استفاده از <span className="preserve-ltr">V2Ray</span> ارائه می‌دهد.</>,
     'about.telegram': 'به کانال تلگرام ما بپیوندید',
+    'about.configs_repo': <>مخزن کانفیگ‌های <span className="preserve-ltr">V2Ray</span></>,
+    'about.app_repo': 'مشاهده پروژه در گیت‌هاب',
     
     // Language
     'language.switch': 'English',

@@ -4,8 +4,8 @@ import { parseConfigs } from '../utils/configParser';
 
 export async function fetchConfigs(): Promise<VPNConfig[]> {
   const [serverResponse, subscriptionResponse] = await Promise.all([
-    fetch(CONFIG_URLS.SERVER),
-    fetch(CONFIG_URLS.SUBSCRIPTION)
+    fetch(CONFIG_URLS.MAIN_REPO),
+    fetch(CONFIG_URLS.ALL_CONFIGS)
   ]);
 
   const [serverText, subscriptionText] = await Promise.all([
